@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:900');
+
+
+body {
+  background-color: yellow;
+  font-family: 'Exo', sans-serif;
+  overflow: hidden;
+}
+div#lucky_numbers {
+  text-align: center;
+  margin-top: 30vh;
+}
+div.number {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: #e4f5fc;
+  background: -moz-linear-gradient(-45deg, #e4f5fc 0%, #2ab0ed 40%, #2ab0ed 89%);
+  background: -webkit-linear-gradient(-45deg, #e4f5fc 0%,#2ab0ed 40%,#2ab0ed 89%);
+  background: linear-gradient(135deg, #e4f5fc 0%,#2ab0ed 40%,#2ab0ed 89%);
+  border-radius: 50%;
+  line-height: 80px;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
