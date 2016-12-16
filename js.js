@@ -6,20 +6,24 @@ function numbers_picker() {
   var i=0;
   while (i<5){
     var temp = Math.floor((Math.random()*59));
-    console.log(temp);
-    if(rand.find(lookup(),temp) == undefined){
-      rand.push();
-      console.log("push");
+    if(rand.find(lookup, temp) == undefined){
+      rand.push(temp);
       i++;
     }
-    console.log("dupa");
   }
+  rand.sort(sortit);
+  console.log(rand);
   return(rand);
 }
 
 function lookup(x) {
   return x == this;
 }
+
+function sortit(a, b){
+  return a-b
+};
+
 
 // function numbers_picker() {
 //   var rand = [];
